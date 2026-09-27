@@ -1,0 +1,26 @@
+[
+    {
+        "failure_id": "SWE4-FAIL-001",
+        "likely_cause": "Priority setter truncates floating-point values through integer template type",
+        "explanation": "The test instantiates PriortyNode<int> and sets priority to 9.5. The setter accepts the priority argument as const T&, so the floating-point value is converted to int before assignment and becomes 9. The stored value therefore cannot satisfy the expected double-precision priority.",
+        "suspect_locations": [
+            {
+                "file": "Buzz Yateer/DS/PriortyNode.h",
+                "line": 51,
+                "note": "setPriorty accepts const T& instead of a double priority parameter."
+            }
+        ]
+    },
+    {
+        "failure_id": "SWE4-FAIL-002",
+        "likely_cause": "Linked-list insertion never reports successful operations",
+        "explanation": "Valid insertions update the linked-list state, but the insert function reaches its unconditional false return after processing every position. The test therefore observes correct list mutation alongside an incorrect success status for all three valid insertions.",
+        "suspect_locations": [
+            {
+                "file": "Buzz Yateer/DS/LinkedList.h",
+                "line": 51,
+                "note": "insert unconditionally returns false after valid insertion handling."
+            }
+        ]
+    }
+]
