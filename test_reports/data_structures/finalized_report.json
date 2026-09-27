@@ -1,0 +1,220 @@
+{
+    "project_name": "data_structures-a42ccdd0cdaa4160a9d04436b1966ee8",
+    "execution_state": "full",
+    "warnings": [],
+    "design_doc": {
+        "detected": false,
+        "path": null,
+        "units": []
+    },
+    "obligations": {
+        "detected": false,
+        "path": null,
+        "obligations": []
+    },
+    "summary": {
+        "test_status": "FAILED",
+        "total_tests": 9,
+        "passed_tests": 7,
+        "failed_tests": 2,
+        "spec_tests": 0,
+        "white_box_tests": 9,
+        "units_total": 0,
+        "units_covered": 0,
+        "units_with_failing_tests": [],
+        "line_coverage_pct": 95.37,
+        "branch_coverage_pct": 77.08,
+        "function_coverage_pct": 100.0,
+        "line_coverage_floor_pct": 50.0,
+        "branch_coverage_floor_pct": 50.0,
+        "function_coverage_floor_pct": 50.0,
+        "coverage_met": true
+    },
+    "uncoverable_lines": [],
+    "scope": [
+        {
+            "path": "Buzz Yateer/DS/LinkedList.h",
+            "status": "tested"
+        },
+        {
+            "path": "Buzz Yateer/DS/ListADT.h",
+            "status": "tested"
+        },
+        {
+            "path": "Buzz Yateer/DS/Node.h",
+            "status": "tested"
+        },
+        {
+            "path": "Buzz Yateer/DS/Pair.h",
+            "status": "tested"
+        },
+        {
+            "path": "Buzz Yateer/DS/PriortyNode.h",
+            "status": "tested"
+        },
+        {
+            "path": "Buzz Yateer/DS/Queue.h",
+            "status": "tested"
+        },
+        {
+            "path": "Buzz Yateer/DS/QueueADT.h",
+            "status": "tested"
+        },
+        {
+            "path": "Buzz Yateer/DS/priority_queue.h",
+            "status": "tested"
+        },
+        {
+            "path": "Buzz Yateer/DS/priortyQueueADT.h",
+            "status": "tested"
+        }
+    ],
+    "traceability": [
+        {
+            "test_id": "NodeTest.ConstructorsAndMutatorsMaintainItemAndLink",
+            "suite": "NodeTest",
+            "test_name": "ConstructorsAndMutatorsMaintainItemAndLink",
+            "units": [],
+            "origin": "white-box",
+            "status": "PASS",
+            "duration_ms": 0.0,
+            "failure_id": null
+        },
+        {
+            "test_id": "PairTest.ConstructionCopyAssignmentAndFactory",
+            "suite": "PairTest",
+            "test_name": "ConstructionCopyAssignmentAndFactory",
+            "units": [],
+            "origin": "white-box",
+            "status": "PASS",
+            "duration_ms": 0.0,
+            "failure_id": null
+        },
+        {
+            "test_id": "PriorityNodeTest.ConstructorsAndMutatorsMaintainPriority",
+            "suite": "PriorityNodeTest",
+            "test_name": "ConstructorsAndMutatorsMaintainPriority",
+            "units": [],
+            "origin": "white-box",
+            "status": "FAIL",
+            "duration_ms": 0.0,
+            "failure_id": "SWE4-FAIL-001"
+        },
+        {
+            "test_id": "LinkedListTest.StartsEmptyAndSupportsInsertGetRemoveAndClear",
+            "suite": "LinkedListTest",
+            "test_name": "StartsEmptyAndSupportsInsertGetRemoveAndClear",
+            "units": [],
+            "origin": "white-box",
+            "status": "FAIL",
+            "duration_ms": 0.0,
+            "failure_id": "SWE4-FAIL-002"
+        },
+        {
+            "test_id": "LinkedListTest.RejectsInvalidPositionsWithoutChangingContents",
+            "suite": "LinkedListTest",
+            "test_name": "RejectsInvalidPositionsWithoutChangingContents",
+            "units": [],
+            "origin": "white-box",
+            "status": "PASS",
+            "duration_ms": 0.0,
+            "failure_id": null
+        },
+        {
+            "test_id": "QueueTest.FifoOperationsAndEmptyFailures",
+            "suite": "QueueTest",
+            "test_name": "FifoOperationsAndEmptyFailures",
+            "units": [],
+            "origin": "white-box",
+            "status": "PASS",
+            "duration_ms": 0.0,
+            "failure_id": null
+        },
+        {
+            "test_id": "QueueTest.CopyIsIndependentAndPreservesOrder",
+            "suite": "QueueTest",
+            "test_name": "CopyIsIndependentAndPreservesOrder",
+            "units": [],
+            "origin": "white-box",
+            "status": "PASS",
+            "duration_ms": 0.0,
+            "failure_id": null
+        },
+        {
+            "test_id": "PriorityQueueTest.DequeuesHighestPriorityFirstAndHandlesEmpty",
+            "suite": "PriorityQueueTest",
+            "test_name": "DequeuesHighestPriorityFirstAndHandlesEmpty",
+            "units": [],
+            "origin": "white-box",
+            "status": "PASS",
+            "duration_ms": 0.0,
+            "failure_id": null
+        },
+        {
+            "test_id": "PriorityQueueTest.EqualPrioritiesRemainStableAndCopyIsIndependent",
+            "suite": "PriorityQueueTest",
+            "test_name": "EqualPrioritiesRemainStableAndCopyIsIndependent",
+            "units": [],
+            "origin": "white-box",
+            "status": "PASS",
+            "duration_ms": 0.0,
+            "failure_id": null
+        }
+    ],
+    "failures": [
+        {
+            "failure_id": "SWE4-FAIL-001",
+            "test_id": "PriorityNodeTest.ConstructorsAndMutatorsMaintainPriority",
+            "suite": "PriorityNodeTest",
+            "test_name": "ConstructorsAndMutatorsMaintainPriority",
+            "messages": [
+                "tests/data_structures/data_structures_tests.cpp:49\nExpected equality of these values:\n  node.getPriorty()\n    Which is: 9\n  9.5"
+            ],
+            "trace_refs": [
+                "data_structures_tests.c"
+            ],
+            "annotated_refs": [
+                "tests/data_structures/data_structures_tests.cpp:39"
+            ],
+            "analysis": {
+                "likely_cause": "Priority setter truncates floating-point values through integer template type",
+                "explanation": "The test instantiates PriortyNode<int> and sets priority to 9.5. The setter accepts the priority argument as const T&, so the floating-point value is converted to int before assignment and becomes 9. The stored value therefore cannot satisfy the expected double-precision priority.",
+                "suspect_locations": [
+                    {
+                        "file": "Buzz Yateer/DS/PriortyNode.h",
+                        "line": 51,
+                        "note": "setPriorty accepts const T& instead of a double priority parameter."
+                    }
+                ]
+            }
+        },
+        {
+            "failure_id": "SWE4-FAIL-002",
+            "test_id": "LinkedListTest.StartsEmptyAndSupportsInsertGetRemoveAndClear",
+            "suite": "LinkedListTest",
+            "test_name": "StartsEmptyAndSupportsInsertGetRemoveAndClear",
+            "messages": [
+                "tests/data_structures/data_structures_tests.cpp:58\nValue of: list.insert(1, 10)\n  Actual: false\nExpected: true",
+                "tests/data_structures/data_structures_tests.cpp:59\nValue of: list.insert(1, 5)\n  Actual: false\nExpected: true",
+                "tests/data_structures/data_structures_tests.cpp:60\nValue of: list.insert(3, 15)\n  Actual: false\nExpected: true"
+            ],
+            "trace_refs": [
+                "data_structures_tests.c"
+            ],
+            "annotated_refs": [
+                "tests/data_structures/data_structures_tests.cpp:55"
+            ],
+            "analysis": {
+                "likely_cause": "Linked-list insertion never reports successful operations",
+                "explanation": "Valid insertions update the linked-list state, but the insert function reaches its unconditional false return after processing every position. The test therefore observes correct list mutation alongside an incorrect success status for all three valid insertions.",
+                "suspect_locations": [
+                    {
+                        "file": "Buzz Yateer/DS/LinkedList.h",
+                        "line": 51,
+                        "note": "insert unconditionally returns false after valid insertion handling."
+                    }
+                ]
+            }
+        }
+    ]
+}
